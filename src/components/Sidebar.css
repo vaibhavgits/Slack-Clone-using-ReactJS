@@ -1,0 +1,27 @@
+.sidebar{
+    stop-color: white;
+    background-color: var(--slack-color);
+    border-top: 1px solid #49274b;
+    max-width: 260px;
+
+}
+
+.sidebar_header {
+    margin-top:10px;
+    border-bottom: 1px solid #49274b;
+    padding-bottom: 10px;
+    padding: 13px;
+
+}
+
+.sidebar_info{
+    flex:1;
+}
+
+.sidebar_header > .MuiSvgIco-root{
+    padding:8px;
+    color: #030303;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 999px;
+}

@@ -1,0 +1,57 @@
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: var(--slack-color);
+    color: white;
+}
+
+.header_left{
+    /* header left will usse 30% of the header i.e 0.3 */
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* CSS styling will apply only to those divs with class "MuiSvgIcon-root" 
+which are direct descendants (immediate children) of elements with class "header_left" */
+.header_left > .MuiSvgIcon-root {
+    margin-left: auto;
+    margin-right:20px;
+}
+
+.header_search{
+    /* header search will usse 40% of the header i.e 0.4 */
+    flex: 0.4;
+    background-color: #421f44;
+    text-align:center;
+    display: flex;
+    padding: 0 50px;
+    color: gray;
+    border: 1px gray solid;
+    border-radius: 6px;   
+}
+
+.header_search > input{
+    background-color: transparent;
+    border:none; 
+    text-align: center;
+    /* vw = Relative to 1% of the width of the viewport* */
+    min-width: 35vw;
+}
+
+.header_right{
+    /* header right will usse 30% of the header i.e 0.3 */
+    flex: 0.3;
+    display: flex;
+    /* flex-end = Items are positioned at the end of the container */
+    align-items: flex-end;
+}
+
+.header_right > .MuiSvgIcon-root {
+    margin-left: auto;
+    margin-right:20px;
+}
+
